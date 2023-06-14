@@ -11,6 +11,7 @@ function newSetTimeout() {
 }
 window.setTimeout = newSetTimeout;
 
+//ДЕОБФУСКАЦІЯ
 //робить текст придатним для пошуку в гуглі
 function cleanText(text) {
 	var fixed = text;
@@ -34,9 +35,10 @@ function cleanText(text) {
 }
 //вивід варіантів відповідей у консоль
 var variants = $('div.wrapper0 > div.b3 > ol').children;
-for ( var i = 0; i < variants.length; i++ ) {
+for (var i = 0; i < variants.length; i++) {
     console.log( cleanText( variants[i].innerText ) );
 }
 
-вивід питань у консоль
+//вивід питань у консоль
 cleanText( $("body > div.wrapper0 > div.b3 > h2").innerText );
+//Кінець - ДЕОБФУСКАЦІЯ
